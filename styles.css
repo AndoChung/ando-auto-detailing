@@ -1,0 +1,78 @@
+*, *::after, *::before {
+    margin:0;
+}
+
+
+.header-section {
+    background-image: url(imgs/audiheaderimage.jpg);
+    background-size: cover;
+    background-position: 50% 60%;
+    height: 100vh;
+    background-color: rgba(156, 179, 255, 0.55);
+    background-blend-mode: multiply;
+    color: white;
+}
+
+.header {
+    display: flex;
+}
+
+.header-navbar-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-right: 60px;
+}
+
+.header-navbar-list li {
+    margin: 50px 30px;
+    font: 20px "Assistant";
+}
+
+
+nav {
+    width: 100%;
+}
+
+.image-logo {
+    height: 150px;
+}
+
+.header-intro-section {
+    margin: 20vh 0 0 100px;
+}
+
+h1 {
+    font: 50px "Cinzel";
+}
+
+.header-intro-section p {
+    font: 20px "Cinzel";
+    margin-bottom: 5px;
+}
+
+.header-intro-section button {
+    background-color: rgba(100,100,200,1);
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Assistant";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 16px 23px;
+    margin: 20px;
+    transition: .8s;
+}
+
+.header-intro-section button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+.interior-image {
+    width: 800px;
+}
