@@ -2,7 +2,9 @@
     margin:0;
 }
 
-
+/*******************************************
+Header Section
+********************************************/
 .header-section {
     background-image: url(imgs/audiheaderimage.jpg);
     background-size: cover;
@@ -29,7 +31,6 @@
     font: 20px "Assistant";
 }
 
-
 nav {
     width: 100%;
 }
@@ -43,7 +44,7 @@ nav {
 }
 
 h1 {
-    font: 50px "Cinzel";
+    font: 68px "Cinzel";
 }
 
 .header-intro-section p {
@@ -71,8 +72,128 @@ h1 {
     border: 1px solid black;
 }
 
+/*********************************************
+Service Section
+**************************************************/
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-section-text {
+    align-self: center;
+    margin: 80px 370px 60px 0;
+}
+
+.services-section h2 {
+    font: 55px "Cinzel";
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.services-section p {
+    font-family: "Assistant";
+    text-align: start;
+}
 
 
-.interior-image {
-    width: 800px;
+.services-section-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.service {
+    height: 450px;
+    width: 300px;
+    margin: 0 15px;
+    background-color: rgba(156, 179, 255, 0.65);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exterior-detail {
+    background-image: url(imgs/exteriordetail.jpg);
+    background-size: cover;
+    background-color: rgba(255, 180, 145, 0.55);
+    background-blend-mode: multiply;
+}
+
+.interior-detail {
+    background-image: url(imgs/interiordetail.jpg);
+    background-size: cover;
+}
+
+.paint-correction {
+    background-image: url(imgs/paintcorrection.jpg);
+    background-size: cover;
+}
+
+.car-wash {
+    background-image: url(imgs/premierwash.jpg);
+    background-size: cover;
+}
+
+.service-textbox {
+    height: 45px;
+    width: 250px;
+    background-color: rgba(255,255,255,.7);
+    border: 2px solid black;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    transition: .5s;
+}
+
+.service-textbox h5 {
+    font: 20px "Cinzel";
+}
+
+.service-textbox p {
+    text-align: center;
+    display: none;
+}
+
+.service:hover .service-textbox p {
+    display: block;
+}
+
+.service:hover .service-textbox {
+    height: 350px;
+    justify-content: space-evenly;
+}
+
+.service:hover {
+    background-color: white;
+}
+
+/***************************************
+About Section
+***************************************/
+.about-section {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.about-section-background {
+    background-image: url(imgs/driverinterior.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    width:50vw;
+    height:50vh;
+}
+
+.about-section-text {
+    position: relative;
+    background-color: rgb(167, 187, 255, .4);
+    height: 80vh;
+    width: 1000px;
+    left: 300px;
+    top: 
 }
