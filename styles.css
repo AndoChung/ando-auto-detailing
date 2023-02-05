@@ -2,6 +2,10 @@
     margin:0;
 }
 
+body {
+    position: absolute;
+}
+
 /*******************************************
 Header Section
 ********************************************/
@@ -36,7 +40,7 @@ nav {
 }
 
 .image-logo {
-    height: 150px;
+    height:120px;
 }
 
 .header-intro-section {
@@ -53,23 +57,23 @@ h1 {
 }
 
 .header-intro-section button {
-    background-color: rgba(100,100,200,1);
-    border: 1px solid white;
+    background-color: rgb(81, 105, 241);
+    border: none;
     box-sizing: border-box;
     color: white;
-    font-family: "Assistant";
-    font-size: 16px;
-    font-weight: 700;
+    font: 22px "Forum";
     line-height: 24px;
     padding: 16px 23px;
     margin: 20px;
     transition: .8s;
+    width: 200px;
+    height: 60px;
 }
 
 .header-intro-section button:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+    height: 65px;
+    width: 220px;
+    font-size: 24px;
 }
 
 /*********************************************
@@ -142,8 +146,8 @@ Service Section
     height: 45px;
     width: 250px;
     background-color: rgba(255,255,255,.7);
-    border: 2px solid black;
-    border-radius: 5px;
+    border: none;
+    border-radius: 2px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -181,7 +185,7 @@ About Section
 
 
 .about-section-container {
-    margin: 50px 0;
+    margin: 120px 0;
     display:flex;
     flex-direction: row-reverse;
 }
@@ -193,17 +197,17 @@ About Section
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    width:65vw;
-    height:90vh;
+    width:50vw;
+    height:1000px;
 }
 
 .about-section-text {
     color: black;
     background-color: rgba(255,255,255,1);
-    height: 65vh;
-    width: 80vw;
+    height: 800px;
+    width: 70vw;
     align-self: center;
-    margin-right: -40vw;
+    margin-right: -30vw;
     z-index: 1;
     display: flex;
     justify-content: space-between;
@@ -235,4 +239,86 @@ About Section
 
 .last-paragraph {
     color: rgb(50, 98, 255)
+}
+
+
+/***************************************
+Contact Section
+***************************************/
+
+.contact-section {
+    margin: 0 100px 0 100px;
+}
+
+.contact-section-container {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-section-container p {
+    font: 20px "Assistant";
+    text-align: center;
+    margin: 0 0 3vh 0;
+}
+
+.contact-section-container h2 {
+    font: 55px "Cinzel";
+    text-align: center;
+}
+
+
+.contact-section-container button {
+    background-color: rgb(81, 105, 241);
+    border: none;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Forum";
+    font-size: 22px;
+    line-height: 24px;
+    padding: 16px 23px;
+    margin: 20px;
+    transition: .8s;
+    height: 60px;
+    width: 300px;
+}
+
+.contact-section-container button:hover {
+    height: 65px;
+    width: 320px;
+    font-size: 24px;
+}
+
+/***********************************
+Footer Section
+************************************/
+
+.footer-section {
+    background-color: rgb(19, 32, 75);
+    height: 400px;
+
+}
+
+.footer-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-section-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 180px;
+    margin: 20px;
+    font: 15px "Assistant";
+    color: white;
+    margin: 50px 60px 0 60px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
 }
