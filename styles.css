@@ -325,7 +325,8 @@ Contact Section
 }
 
 .contact-section-container {
-    height: 500px;
+    min-height: 500px;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
