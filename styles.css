@@ -4,16 +4,19 @@
 
 body {
     position: absolute;
+    max-width:100%;
 }
 
-/*******************************************
+/***************************************************************************************************************
 Header Section
-********************************************/
+****************************************************************************************************************/
 .header-section {
     background-image: url(imgs/audiheaderimage.jpg);
     background-size: cover;
     background-position: 50% 60%;
     height: 100vh;
+    width: 100vw;
+    max-width: 100%;
     background-color: rgba(156, 179, 255, 0.55);
     background-blend-mode: multiply;
     color: white;
@@ -21,6 +24,7 @@ Header Section
 
 .header {
     display: flex;
+    justify-content: space-between;
 }
 
 .header-navbar-list {
@@ -39,11 +43,85 @@ nav {
     width: 100%;
 }
 
+.header-dropdown-label {
+
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    cursor: pointer;
+    margin: 15px 30px 0 0;
+}
+
+.header-dropdown-label span {
+    background-color: white;
+    border-radius: 10px;
+    height: 5px;
+    margin: 5px 0;
+    transition: .4s cubic-bezier(.68,-.6,.32,1.6);
+}
+span:nth-of-type(1){
+    width:50%;
+}
+span:nth-of-type(2){
+    width:100%;
+}
+span:nth-of-type(3){
+    width:75%;
+}
+input[type="checkbox"]{
+    display:none;
+}
+input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(7px,3px)
+}
+input[type="checkbox"]:checked ~ span:nth-of-type(2){
+    transform-origin:top;
+    transform:rotatez(-45deg)
+}
+input[type="checkbox"]:checked ~ span:nth-of-type(3){
+    transform-origin:bottom;
+    width:56%;
+    transform: translate(16px,-10px) rotatez(45deg);
+}
+
+.header-dropdown-list {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+.header-navbar-list-dropdown {
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+}
+
+.header-navbar-list-dropdown li {
+    color: black;
+    background-color: white;
+    height: 30px;
+    font: 20px "Assistant";
+    text-align: center;
+    border-bottom: solid 1px black;
+}
+
+.header-navbar-list-dropdown li:nth-of-type(1) {
+    border-top: solid 1px black;
+}
+
+
+
+
+
 .image-logo {
     height:120px;
 }
 
 .header-intro-section {
+    position: absolute;
+    top: 10vh;
     margin: 20vh 0 0 100px;
 }
 
@@ -76,9 +154,9 @@ h1 {
     font-size: 24px;
 }
 
-/*********************************************
+/*****************************************************************************************************************
 Service Section
-**************************************************/
+******************************************************************************************************************/
 
 .services-section {
     display: flex;
@@ -106,7 +184,6 @@ Service Section
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
 .service {
@@ -177,12 +254,9 @@ Service Section
     background-color: white;
 }
 
-/***************************************
+/***********************************************************************************************************
 About Section
-***************************************/
-
-
-
+***********************************************************************************************************/
 
 .about-section-container {
     margin: 120px 0;
@@ -190,14 +264,13 @@ About Section
     flex-direction: row-reverse;
 }
 
-
 .about-section-background {
     background-image: url(imgs/driverinterior.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
-    width:50vw;
+    min-width:50vw;
     height:1000px;
 }
 
@@ -205,7 +278,7 @@ About Section
     color: black;
     background-color: rgba(255,255,255,1);
     height: 800px;
-    width: 70vw;
+    min-width: 70vw;
     align-self: center;
     margin-right: -30vw;
     z-index: 1;
@@ -216,23 +289,24 @@ About Section
 .about-section-text h2 {
     font: 45px "Cinzel";
     align-self: center;
-    margin: 0 0 0 5vw;
+    margin: 0 3vw 0 5vw;
+    min-width: 270px;
 }
 
 .about-section-text section {
     margin: 0 2vw 0 0;
-    width: 900px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.about-section-text section h3 {
+.about-section-text h3 {
     font: 35px "Cinzel";
     font-weight: bold;
 }
 
-.about-section-text section p {
+.about-section-text p {
     font: 25px "Forum";
     line-height: 45px;
 }
@@ -242,12 +316,12 @@ About Section
 }
 
 
-/***************************************
+/***********************************************************************************************************
 Contact Section
-***************************************/
+***********************************************************************************************************/
 
 .contact-section {
-    margin: 0 100px 0 100px;
+    margin: 0 8vw;
 }
 
 .contact-section-container {
@@ -291,14 +365,13 @@ Contact Section
     font-size: 24px;
 }
 
-/***********************************
+/*******************************************************************************************************
 Footer Section
-************************************/
+********************************************************************************************************/
 
 .footer-section {
     background-color: rgb(19, 32, 75);
     height: 400px;
-
 }
 
 .footer-section-container {
@@ -321,4 +394,172 @@ Footer Section
 .footer-section ul {
     list-style-type: none;
     padding-left: 0;
+}
+
+.footer-section h4 {
+    margin-bottom: 20px;
+}
+
+.footer-section div + div {
+    margin-top: 100px; 
+}
+
+/******************************************************************************************************************
+Media Queries
+*******************************************************************************************************************/
+
+@media screen and (max-width: 1350px) {
+    /* body {
+        background-color: rgb(69, 197, 236);
+    } */
+    .services-section-links {
+        flex-wrap: wrap;
+    }
+    .service {
+        margin: 15px;
+        width: 33vw;
+        height: 40vh;
+    }
+    .services-section-text {
+        margin: 80px 0px 60px 0px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    /* body {
+        background-color: rgb(44, 107, 35);
+    } */
+    .about-section-text {
+        min-width: 90vw;
+        max-width: 90vw;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 -95vw 0 0;
+    }
+    .about-section-background {
+        min-width: 100vw;
+    }
+    .about-section-text section {
+        margin: 0 15px;
+        max-width: 100%;
+    }
+    .about-section-text section p {
+        margin: 8px 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .service {
+        width: 45vw;
+        height: 50vw;
+        margin: 10px;
+    }
+    .header-dropdown-label {
+        visibility:visible;
+    }
+    nav {
+        width: 0px;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about-section-text h3 {
+        font-size: 30px;
+    }
+    .about-section-text p {
+        font-size: 18px;
+    }
+    .header-section {
+        max-height: 100vh;
+        height: 800px;
+    }
+    .header-intro-section {
+        margin-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header-intro-section {
+        margin-left: 10px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    .services-section h2 {
+        font-size: 40px;
+    }
+    .about-section-text h2 {
+        font-size: 35px;
+    }
+    .contact-section h2 {
+        font-size: 40px;
+    }
+    .footer-section-container {
+        flex-direction:column;
+        align-items: center;
+    }
+    .footer-section {
+        height: 700px;
+    }
+    .footer-section-container div {
+        width: 300px;
+    }
+    .footer-section-summary img {
+        align-self: center;
+    }
+    .footer-section ul {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer-section h4 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header-section {
+        max-height: 100vh;
+        height: 600px;
+    }
+
+    .services-section-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service {
+        width: 80vw;
+        height: 390px;
+    }
+
+
+    .about-section-text h2 {
+        text-align: center;
+    }
+    .about-section-text {
+        height: 1000px;
+    }
+    .about-section-background {
+        height: 1200px;
+    }
+    .about-section-text h3 {
+        text-align: center;
+    }
+    .contact-section {
+        height: 600px;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .about-section-text {
+        height: 1250px;
+    }
+    .about-section-background {
+        height: 1450px;
+    }
 }
