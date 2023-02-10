@@ -1,0 +1,70 @@
+/*******************************************************
+Header Section
+*******************************************************/
+.aboutpage-header-section {
+    background-image: url(../imgs/microfiber.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+    height: 500px;
+}
+
+h1 {
+    color: white;
+}
+
+/*******************************************************
+About Section
+*******************************************************/
+.aboutpage-about-section-container {
+    margin:  0;
+    display:flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+}
+
+.aboutpage-about-section-background {
+    background-image: url(../imgs/redbenz.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    min-width: 20vw;
+}
+
+.aboutpage-about-section-text {
+    color: black;
+    background-color: rgba(255,255,255,1);
+    align-self: center;
+    margin-right: 0vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10vh 5vw 15vh 15vw;
+    
+}
+
+.aboutpage-about-section-text h2 {
+    font: 52px "Cinzel";
+    margin: 0 0 10px 0
+}
+
+.aboutpage-about-section-text h3 {
+    font: 30px "Forum";
+    margin: 0 0 20px 0;
+}
+
+.aboutpage-about-section-text p {
+    font: 22px "Forum";
+    margin: 0 0 20px 0;
+}
+
+.aboutpage-about-section-text span {
+    font: 22px "Forum";
+    color: rgb(13, 89, 202);
+    font-weight: Bold;
+    margin: 0 0 20px 0;
+}
+
