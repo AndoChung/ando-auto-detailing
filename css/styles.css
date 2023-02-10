@@ -117,9 +117,6 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3){
 }
 
 
-
-
-
 .image-logo {
     height:120px;
 }
@@ -157,6 +154,7 @@ h1 {
     height: 65px;
     width: 220px;
     font-size: 24px;
+    background-color: rgb(124, 139, 224);
 }
 
 /*****************************************************************************************************************
@@ -205,8 +203,6 @@ Service Section
 .exterior-detail {
     background-image: url(../imgs/exteriordetail.jpg);
     background-size: cover;
-    background-color: rgba(255, 180, 145, 0.55);
-    background-blend-mode: multiply;
 }
 
 .interior-detail {
@@ -369,6 +365,7 @@ Contact Section
     height: 65px;
     width: 320px;
     font-size: 24px;
+    background-color: rgb(124, 139, 224);
 }
 
 /*******************************************************************************************************

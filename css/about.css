@@ -25,7 +25,7 @@ About Section
 }
 
 .aboutpage-about-section-background {
-    background-image: url(../imgs/redbenz.jpg);
+    background-image: url(../imgs/red\ headlight.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -68,3 +68,196 @@ About Section
     margin: 0 0 20px 0;
 }
 
+/****************************************************************
+Services Section
+*****************************************************************/
+.aboutpage-services-section {
+    margin: 30vh 0 0 0;
+}
+
+.aboutpage-services-section-container {
+    display: flex;
+}
+
+.aboutpage-services-section-package {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 25%;
+    min-width: 15%;
+    transition: .7s;
+    flex: 1 1 auto;
+}
+
+.aboutpage-services-section-package-text {
+    font-family: "Forum";
+    width: 25vw;
+    display: none;
+    color: white;
+}
+
+.aboutpage-services-section-package h4 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.aboutpage-services-section-package span {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.aboutpage-services-section-package p {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+.aboutpage-services-section-package button {
+    margin: 10px 0 0 0;
+    background-color: rgb(81, 105, 241);
+    border: none;
+    box-sizing: border-box;
+    color: white;
+    font: 22px "Forum";
+    line-height: 24px;
+    padding: 16px 23px;
+    transition: .8s;
+    width: 200px;
+    height: 60px;
+}
+
+.aboutpage-services-section-package button:hover {
+    height: 65px;
+    width: 220px;
+    font-size: 24px;
+    background-color: rgb(124, 139, 224);
+}
+
+.package-exteriordetail {
+    background-image: url(../imgs/redbmw.jpg), linear-gradient(to bottom,rgba(224, 95, 95, .5), rgba(224, 95, 95, 1));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    background-blend-mode: multiply;
+}
+
+.package-interiordetail {
+    background-image: url(../imgs/tesla\ interior.jpg), linear-gradient(to bottom,rgba(21, 47, 133, .5), rgba(21, 47, 133, 1));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    background-blend-mode: multiply;
+}
+
+.package-paintcorrection {
+    background-image: url(../imgs/redbenz.jpg), linear-gradient(to bottom,rgb(121, 39, 128, .5), rgb(121, 39, 128, 1));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    background-blend-mode: multiply;
+}
+
+.package-carwash {
+    background-image: url(../imgs/tesla\ exterior.jpg), linear-gradient(to bottom,rgb(39, 128, 39, .5), rgb(39, 128, 39, 1));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    background-blend-mode: multiply;
+}
+
+.aboutpage-services-section-package:hover {
+    max-width: 55%;
+    min-width: 55%;
+}
+
+.aboutpage-services-section-package:hover .aboutpage-services-section-package-text {
+    display:block;
+}
+
+
+/**************************************************************
+FAQ Section
+***************************************************************/
+
+.aboutpage-faq-section {
+    margin: 10vh 0;
+}
+
+.aboutpage-faq-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutpage-faq-section-container h2 {
+    font: 52px "Cinzel";
+}
+
+.aboutpage-faq-section-container span {
+    font: 20px "Forum";
+    text-align: center;
+}
+
+.aboutpage-faq-section-question-container {
+    display: flex;
+}
+
+.aboutpage-faq-section-column {
+    width: 30vw;
+    margin: 0 10px;
+}
+
+.aboutpage-faq-section-question {
+    height: 80px;
+    box-shadow: 0px 1px 8px 1px rgb(231, 231, 231);
+    margin: 20px 0 0 0;
+    display:flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    flex-direction: column;
+    transition-duration: 0.35s;
+    overflow: hidden;
+}
+
+.aboutpage-faq-section-question-triangle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.triangle-sign-container {
+    min-width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle-sign {
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent; 
+    border-left: 10px solid rgb(60, 145, 202);
+}
+
+.aboutpage-faq-section-question h4 {
+    font: 24px "Forum";
+}
+
+.aboutpage-faq-section-answer  {
+    display: none;
+    margin: 10px 40px 0 80px;
+    font: 20px "Forum";
+}
+
+.aboutpage-faq-section-answer p {
+    margin: 10px 0;
+}
+
+.aboutpage-faq-section-question:hover {
+    background-color: rgb(243, 243, 243)
+}
