@@ -1,0 +1,47 @@
+/************************************************
+Header Section
+*******************************************/
+.gallerypage-header-section {
+    background-image: url(../imgs/greenheadlights.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 500px;
+    background-position: center 60%;
+}
+
+h1 {
+    color: white;
+}
+
+/* .header {
+    background-color: rgba(255,255,255,.5)
+} */
+
+
+
+/*********************************************
+Picture Section
+*********************************************/
+
+.gallerypage-picture-section {
+    display: flex;
+    justify-content: center;
+}
+
+.gallerypage-picture-section-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 200px 15vw 200px 15vw;
+    
+}
+
+.gallerypage-picture-section-gallery-picture {
+    max-width: 300px;
+    max-height: 300px;
+    width: 25vw;
+    height: 25vw;
+    margin: 15px;
+    background-color: blue;
+}
