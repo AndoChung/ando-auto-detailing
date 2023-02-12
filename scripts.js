@@ -1,3 +1,6 @@
+
+
+// about.html -> FAQ Section
 var question = document.getElementsByClassName("aboutpage-faq-section-question");
 
 for (let i = 0; i < question.length; i++) {
