@@ -1,0 +1,78 @@
+body {
+    position: absolute;
+    max-width:100%;
+}
+/*******************************************************
+Header Section
+*******************************************************/
+.contactpage-header-section {
+    background-image: url(../imgs/hondacivwash.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+    height: 500px;
+    width: 100vw;
+    max-width: 100%
+}
+
+h1 {
+    color: white;
+}
+
+/*******************************************************
+Info Section
+*******************************************************/
+.contactpage-info-section h2 {
+    font: 42px "Cinzel";
+}
+
+    /*Icon Section*/
+.contactpage-info-section-icon-section {
+
+}
+
+.contactpage-info-section-icon-section h2 {
+    margin: 50px 10vw;
+}
+
+.contactpage-info-section-method-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contactpage-info-section-method-container h3 {
+    font: 36px "Poppins";
+}
+
+.contactpage-info-section-method-container p {
+    font: 20px "Poppins";
+}
+
+
+.contactpage-info-section-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 100px;
+}
+
+    /*Form Section*/
+.contactpage-info-section-form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contactpage-info-section-form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
+.contactpage-info-section-form-flex li{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactpage-info-section-form-flex li input {
+    width: 
+}
