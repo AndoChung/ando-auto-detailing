@@ -1,3 +1,7 @@
+body {
+    position: absolute;
+    max-width:100%;
+}
 /*******************************************************
 Header Section
 *******************************************************/
@@ -73,10 +77,12 @@ Services Section
 *****************************************************************/
 .aboutpage-services-section {
     margin: 30vh 0 0 0;
+    max-width: 100%;
 }
 
 .aboutpage-services-section-container {
     display: flex;
+    max-width: 100%;
 }
 
 .aboutpage-services-section-package {
