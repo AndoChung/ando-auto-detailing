@@ -4,11 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/4db7ac9830.js" crossorigin="anonymous"></script>
+    <script src="../scripts.js" async></script>
+    <title>Contact</title>
 </head>
 <body>
-    
+    <div class="contactpage">
+        <section class="contactpage-header-section">
+            <header class="header">
+                <a href="../index.html"><img src="../imgs/logoremovebg.png" class="image-logo"></a>
+                <nav>
+                    <ul class="header-navbar-list">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a>Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-dropdown-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+            <section class="header-dropdown-list">
+                <ul class="header-navbar-list-dropdown">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a>Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+            <section class="header-intro-section">
+                <h1>Contact</h1>
+            </section>
+        </section>
+        <section class="contactpage-info-section">
+            <section class="contactpage-info-section-icon-section">
+                <h2>Get in Touch With Us</h2>
+                <div class="contactpage-info-section-method-container">
+                    <div class="contactpage-info-section-method method-email">
+                        <i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+                        <h3>Email</h3>
+                        <p>andodetailing@gmail.com</p>
+                    </div>
+                    <div class="contactpage-info-section-method method-email">
+                        <i class="fa fa-phone fa-5x" aria-hidden="true"></i>
+                        <h3>Phone</h3>
+                        <p>(818) 795-1335</p>
+                    </div>
+                </div>
+            </section>
+            <section class="contactpage-info-section-form-section">
+                <h2>Have Any Questions?</h2>
+                <form class="contactpage-info-section-form" action="https://getform.io/f/6b67ac2b-62ee-4994-befa-72c80199366b" method="POST">
+                    <ul class="contactpage-info-section-form-flex">
+                        <li>
+                            <label>Name:</label>
+                            <input type="text" name="name">
+                        </li>
+                        <li>
+                            <label>Email:</label>
+                            <input type="email" name="email">
+                        </li>
+                        <li>
+                            <label>How may we help you?</label>
+                            <textarea name="message" id="input-message" rows="6"></textarea>
+                        </li>
+                    </ul>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </section>
+        <section class="footer-section">
+            <footer class="footer-section-container">
+                <div class="footer-section-summary">
+                    <img src="../imgs/logoremovebg.png" class="image-logo">
+                    <p><em>Mobile car detailing service helping people like you keep their cars looking new since 2021.</em></p>
+                </div>
+                <div class="footer-section-about">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li>Blog</li>
+                        <li>CCPA Policy</li>
+                        <li>Terms and Conditions</li>
+                        <li>Disclaimer</li>
+                        <li>Join Our Team!</li>
+                    </ul>
+                </div>
+                <div class="footer-section-gallery">
+                    <h4>Gallery</h4>
+                    <ul>
+                        <li>Exterior Detailing</li>
+                        <li>Interior Detailing</li>
+                        <li>Paint Correction</li>
+                        <li>Mobile Car Wash</li>
+                    </ul>
+                </div>
+            </footer>
+        </section>
+    </div>
 </body>
 </html>
