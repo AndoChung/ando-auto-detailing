@@ -21,17 +21,30 @@ h1 {
 /*******************************************************
 Info Section
 *******************************************************/
+.contactpage-info-section {
+    display: flex;
+    justify-content: center;
+}
+
 .contactpage-info-section h2 {
     font: 42px "Cinzel";
 }
 
-    /*Icon Section*/
-.contactpage-info-section-icon-section {
+.contactpage-info-section-container {
+    width: 80vw;
+}
 
+    /*Icon Section*/
+
+
+.contactpage-info-section-icon-section {
+    margin: 120px 0 0 0;
+    padding: 0 0 100px 0;
+    border-bottom: solid 1px rgb(124, 139, 224);
 }
 
 .contactpage-info-section-icon-section h2 {
-    margin: 50px 10vw;
+    margin: 0 0 60px 100px;
 }
 
 .contactpage-info-section-method-container {
@@ -47,6 +60,9 @@ Info Section
     font: 20px "Poppins";
 }
 
+i {
+    color: rgb(124, 139, 224)
+}
 
 .contactpage-info-section-method {
     display: flex;
@@ -56,23 +72,66 @@ Info Section
 }
 
     /*Form Section*/
+.contactpage-info-section-form-section h2 {
+    padding: 120px 0 0 0;
+    margin: 0 200px 0 100px;
+}
+
 .contactpage-info-section-form-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    font: 20px "Poppins";
 }
 
 .contactpage-info-section-form {
-    display: flex;
+    width: 800px;
+    padding: 100px 0 0 40px;
+    display:flex;
     flex-direction: column;
-    width: 60vw;
 }
+
+.contactpage-info-section-form-flex {
+    margin: 0;
+    padding: 0;
+}
+
 
 .contactpage-info-section-form-flex li{
     display: flex;
     flex-direction: column;
 }
 
+.contactpage-info-section-form-flex li label {
+    margin: 10px 0 10px 0;
+}
+
+
+
 .contactpage-info-section-form-flex li input {
-    width: 
+    height: 20px;
+    font-family: "Poppins"
+}
+
+
+
+.contactpage-info-section-form-section button {
+    background-color: rgb(81, 105, 241);
+    border: none;
+    box-sizing: border-box;
+    color: white;
+    font: 22px "Forum";
+    line-height: 24px;
+    padding: 16px 23px;
+    margin: 20px;
+    transition: .8s;
+    width: 200px;
+    height: 60px;
+    align-self: center;
+}
+
+.contactpage-info-section-form-section button:hover {
+    height: 65px;
+    width: 220px;
+    font-size: 24px;
+    background-color: rgb(124, 139, 224);
 }
