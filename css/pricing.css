@@ -1,0 +1,101 @@
+body {
+    position: absolute;
+    max-width:100%;
+}
+/*******************************************************
+Header Section
+*******************************************************/
+.pricingpage-header-section {
+    background-image: url(../imgs/hondacivwash.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+    height: 500px;
+    width: 100vw;
+    max-width: 100%
+}
+
+h1 {
+    color: white;
+}
+
+/*******************************************************
+Text Section
+*******************************************************/
+
+.pricingpage-text-section {
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+
+.pricingpage-text-section-container span{
+    font: 25px "Forum";
+    display: block;
+    margin: 50px 0 50px 0 ;
+    color: rgb(50, 98, 255);
+}
+
+.pricingpage-text-section-container p {
+    font: 25px "Forum";
+    line-height: 40px;
+    margin: 30px 0 30px 0;
+}
+
+/*******************************************************
+Info Section
+*******************************************************/
+
+/*Title*/
+
+.pricingpage-info-section-title-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.pricingpage-info-section-title-container div {
+    width: 25%;
+    background-color: rgb(50, 98, 255);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font: 12px "Poppins";
+}
+
+.pricingpage-info-section-title-container div h3 {
+    text-align: center;
+    color: white;
+}
+
+/*Package*/
+
+.pricingpage-info-section-package-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricingpage-info-section-package {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 0 ;
+    align-items: center;
+}
+
+.pricingpage-info-section-package div {
+    min-width: 75vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.pricingpage-info-section-package div span {
+    
+}
+
+.pricingpage-info-section-package p {
+    width: 75vw;
+}
