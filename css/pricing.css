@@ -72,30 +72,43 @@ Info Section
 
 /*Package*/
 
+.pricingpage-info-section-package-section {
+
+}
+
 .pricingpage-info-section-package-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
+
 }
 
 .pricingpage-info-section-package {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 20px 0 20px 0 ;
-    align-items: center;
 }
 
-.pricingpage-info-section-package div {
-    min-width: 75vw;
-    display: flex;
-    flex-direction: row;
+
+
+
+.pricingpage-info-section-package div h4 {
+    width: fit-content;
+    margin: 0;
+}
+
+.dotted-line-spacing {
+    display: block;
+    width: fit-content;
 }
 
 .pricingpage-info-section-package div span {
-    
+
+}
+
+.pricingpage-info-section-package-price {
+    display: block;
+    width: fit-content;
 }
 
 .pricingpage-info-section-package p {
-    width: 75vw;
+
 }
